@@ -40,27 +40,23 @@ Resources:
       UserData:
         Fn::Base64:
           !Sub |
-            #! /bin/bash
-            yum update -y
-            yum install python3-pip
-            mkdir flask
-            cd flask/
-            python3 -m venv venv
-            source venv/bin/activate
-            /home/ec2-user/flask/venv/bin/python3 -m pip install --upgrade pip
-            pip install flask
-            mkdir demoapp
-            cd demoapp/
-            FOLDER="https://raw.githubusercontent.com/Kaya-Y/my-projects/main/aws/projects/Project-101-kittens-carousel-static-website-ec2/static-web"
-            cd /var/www/html
-            wget $FOLDER/index.html
-            wget $FOLDER/cat0.jpg
-            wget $FOLDER/cat1.jpg
-            wget $FOLDER/cat2.jpg
-            wget $FOLDER/cat3.png
-            systemctl start httpd
-            systemctl enable httpd
-
+          #! /bin/bash
+          yum update -y
+          yum install python3-pip
+          mkdir /home/ec2-user/flask/
+          cd /home/ec2-user/flask/
+          python3 -m venv venv
+          source venv/bin/activate
+          /home/ec2-user/flask/venv/bin/python3 -m pip install --upgrade pip
+          pip install flask
+          FOLDER="https://raw.githubusercontent.com/Kaya-Y/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter"
+          mkdir /home/ec2-user/flask/demoapp/
+          cd /home/ec2-user/flask/demoapp/
+          wget $FOLDER/app.py
+          mkdir /home/ec2-user/flask/demoapp/templates/
+          cd /home/ec2-user/flask/demoapp/templates/
+          wget $FOLDER/templates/index.html
+          wget $FOLDER/templates/result.html
 Outputs:
   WebsiteURL:
     Value: !Sub
