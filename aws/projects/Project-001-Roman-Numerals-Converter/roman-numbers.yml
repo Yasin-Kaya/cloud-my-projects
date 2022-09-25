@@ -6,12 +6,16 @@ Description: |
   custom security group allowing http connections on port 80 and SSH connection on port 22. 
   Roman Numerals Converter Application is downloaded from Github repository, 
   then installed on Flask.
-
+Parameters:
+  KeyName:
+    Description: Enter the name of your Key Pair for SSH connections
+    Type: AWS::EC2::KeyPair::KeyName
+ 
 Resources:
   WebServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      GroupDescription: Enable HTTP for Apache Web Server and SSH for secure connection. # Required
+      GroupDescription: Enable HTTP for Flask Web Server and SSH port to secure reach to my EC2
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -25,36 +29,27 @@ Resources:
   WebServerHost:
     Type: AWS::EC2::Instance
     Properties:
+      KeyName: !Ref KeyName
       ImageId: ami-05fa00d4c63e32376
       InstanceType: t2.micro
-      KeyName: First_Key
       SecurityGroupIds:
         - !Ref WebServerSecurityGroup
+      UserData: !Base64 |
+        #!/bin/bash 
+        yum update -y
+        yum install python3 -y
+        pip3 install flask
+        cd /home/ec2-user
+        wget https://raw.githubusercontent.com/XXXXXXXXX/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter/app.py
+        mkdir templates
+        cd templates
+        wget https://raw.githubusercontent.com/XXXXXXXXX/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter/templates/index.html
+        wget https://raw.githubusercontent.com/XXXXXXX/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter/templates/result.html
+        cd ..
+        python3 app.py
       Tags:
         - Key: Name
           Value: !Sub Web Server of ${AWS::StackName} Stack
-      UserData:
-        Fn::Base64:
-          !Sub |
-          #! /bin/bash
-          yum update -y
-          yum install python3-pip
-          mkdir /home/ec2-user/flask/
-          cd /home/ec2-user/flask/
-          python3 -m venv venv
-          source venv/bin/activate
-          /home/ec2-user/flask/venv/bin/python3 -m pip install --upgrade pip
-          pip install flask
-          FOLDER="https://raw.githubusercontent.com/Kaya-Y/my-projects/main/aws/projects/Project-001-Roman-Numerals-Converter"
-          mkdir /home/ec2-user/flask/demoapp/
-          cd /home/ec2-user/flask/demoapp/
-          wget $FOLDER/app.py
-          mkdir /home/ec2-user/flask/demoapp/templates/
-          cd /home/ec2-user/flask/demoapp/templates/
-          wget $FOLDER/templates/index.html
-          wget $FOLDER/templates/result.html
-          cd ..
-          python3 app.py
 
 Outputs:
   WebsiteURL:
