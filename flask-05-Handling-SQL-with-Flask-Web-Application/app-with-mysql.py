@@ -107,5 +107,9 @@ def add_email():
 
 # Add a statement to run the Flask application which can be reached from any host on port 80.
 if __name__ == '__main__':
+<<<<<<< HEAD:flask-05-Handling-SQL-with-Flask-Web-Application/app-with-mysql.py
    # app.run(debug=True)
    app.run(host='0.0.0.0', port=80)
+=======
+   app.run(debug=True)
+>>>>>>> 2a102d16e65dd1bc683d3670766a517c5e4697f0:aws/projects/flask-05-Handling-SQL-with-Flask-Web-Application/app-with-mysql.py
