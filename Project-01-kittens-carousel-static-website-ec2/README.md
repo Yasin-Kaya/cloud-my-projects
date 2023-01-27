@@ -5,7 +5,7 @@ Kittens Carousel is a static website application deployed with Apache Web Server
 
 ## Problem Statement
 
-![Project_101](Pro_Project_101.png)
+![Project_101](Project_01_1288X600.jpg)
 
 - Your company has recently started a web application project that will serve as an attraction point for pet lovers. As a first step of the project, developers in your team have prepared a preliminary design of kittens carousel application and pushed necessary files for the project to the repository on Github. 
 
@@ -34,20 +34,20 @@ Kittens Carousel is a static website application deployed with Apache Web Server
 ## Project Skeleton 
 
 ```
-101-kittens-carousel-static-website-ec2 (folder)
+01-kittens-carousel-static-website-ec2 (folder)
 |
-|----readme.md         # (Definition of the project)          
+|----readme.md         # Given (Definition of the project)          
 |----cfn-template.yml  # Requested (Cloudformation template)
 |----static-web
-        |----index.html  # (HTML file)
-        |----cat0.jpg    # (image file)
-        |----cat1.jpg    # (image file)
-        |----cat2.jpg    # (image file)
+        |----index.html  # Given (HTML file)
+        |----cat0.jpg    # Given (image file)
+        |----cat1.jpg    # Given (image file)
+        |----cat2.jpg    # Given (image file)
 ```
 
 ## Expected Outcome
 
-![Project 101 : Kittens Carousel Application Snapshot](./project-101-snapshot.png)
+![Project 01 : Kittens Carousel Application Snapshot](Kitten.jpg)
 
 ### At the end of the project, following topics are to be covered;
 
