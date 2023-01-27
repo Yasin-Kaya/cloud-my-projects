@@ -6,7 +6,7 @@ The Phonebook Application aims to create a phonebook application in Python and d
 
 ## Problem Statement
 
-![Project_004](003_phonebook.png)
+![Project_004](Phone1288X600.jpg)
 
 - Your company has recently started a project that aims to serve as phonebook web application. You and your colleagues have started to work on the project. Your teammates have developed the UI part the project as shown in the template folder and they need your help to develop the coding part and deploying the app in development environment.
 
@@ -113,13 +113,13 @@ thousand                         Warning -> 'Invalid input: Phone number should 
 ```text
 004-phonebook-web-application (folder)
 |
-|----readme.md         # (Definition of the project)
+|----readme.md          # Given (Definition of the project)
 |----cfn-template.yml   # Requested (Cloudformation template)
-|----app.py            # (Python Flask Web Application)
+|----app.py             # Given (Python Flask Web Application)
 |----templates
-        |----index.html      # (HTML template)
-        |----add-update.html # (HTML template)
-        |----delete.html     # (HTML template)
+        |----index.html      # Given (HTML template)
+        |----add-update.html # Given (HTML template)
+        |----delete.html     # Given (HTML template)
 ```
 
 ## Expected Outcome
