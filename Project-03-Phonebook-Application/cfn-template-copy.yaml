@@ -139,7 +139,7 @@ Resources:
       DBSecurityGroups: 
         - !Ref MyDBSecurityGroup
       Engine: MySQL
-      EngineVersion: 8.0.19
+      EngineVersion: 8.0.28
       MasterUsername: admin
       MasterUserPassword: yasin_1
       Port: 3306
