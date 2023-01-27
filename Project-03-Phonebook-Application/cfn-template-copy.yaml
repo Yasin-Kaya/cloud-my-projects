@@ -141,7 +141,7 @@ Resources:
       Engine: MySQL
       EngineVersion: 8.0.28
       MasterUsername: admin
-      MasterUserPassword: yasin_1
+      MasterUserPassword: yasin123
       Port: 3306
       PubliclyAccessible: true
 
