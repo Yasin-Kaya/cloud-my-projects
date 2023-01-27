@@ -4,7 +4,7 @@ The Roman Numerals Converter Application aims to convert the given number to the
 
 ## Problem Statement
 
-![Project_001](Project_001_.png)
+![Project_001](Proje_01_1288X600.jpg)
 
 - Your company has recently started on a project that aims to be one of the most used unit converters and formulas website. Roman Numerals Converter is the part of the project. So you and your colleagues have started to work on the project.
 
@@ -84,17 +84,17 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 ```
 001-roman-numerals-converter (folder)
 |----cli.sh            # Requested (CLI commands)
-|----readme.md         # (Definition of the project)          
+|----readme.md         # Given (Definition of the project)          
 |----cfn-template.yml  # Requested (Cloudformation template)
-|----app.py            # (Definition of the project)          
+|----app.py            # Given (Definition of the project)          
 |----templates
-        |----index.html  # (HTML template)
-        |----result.html # (HTML template)
+        |----index.html  # Given (HTML template)
+        |----result.html # Given (HTML template)
 ```
 
 ## Expected Outcome
 
-![Project 001 Snapshot](project-001-snapshot.png)
+![Project 001 Snapshot](Romen-Number-01.jpg)
 
 ### At the end of the project, following topics are to be covered;
 
