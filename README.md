@@ -12,6 +12,8 @@ List of projects within AWS workshop as follows;
 
 4. - [Project-04 : Kittens Carousel Static Website deployed on AWS Cloudfront, S3 and Route 53 using Cloudformation](./Project-04-kittens-carousel-static-web-s3-cf/README.md)
 
+5. - [Project-05 : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, Lambda, DynamoDB and Cloudfront with Route 53](./Project-05-Capstone-Project-Blog-Page-App-(Django)-on-AWS-Environment/README.md)
+
 ## Python Hands-on Trainings
 
 List of hands-on trainings within Python workshop as follows;
