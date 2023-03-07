@@ -29,9 +29,9 @@ CREATE TABLE users (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 """
 data = """
-INSERT INTO clarusway.users 
+INSERT INTO yasin.users 
 VALUES 
-	("Tuba", "tuba@amazon.com" ),
+	("Yasin", "www.yasinkaya.info" ),
 	("Ethan", "ethan@micrasoft.com"),
 	("mostafa", "mostafa@facebook.com"),
     ("sait", "sait@tesla.com"),

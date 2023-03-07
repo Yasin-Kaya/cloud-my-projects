@@ -18,7 +18,7 @@ email VARCHAR);
 data = """
 INSERT INTO users
 VALUES
-	("Tuba", "tuba@amazon.com" ),
+	("Yasin", "www.yasinkaya.info" ),
 	("Ethan", "ethan@micrasoft.com"),
 	("mostafa", "mostafa@facebook.com"),
     ("sait", "sait@tesla.com"),
