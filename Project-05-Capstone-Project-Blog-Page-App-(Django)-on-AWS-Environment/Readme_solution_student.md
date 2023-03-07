@@ -1,8 +1,8 @@
-# Project-503 : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, DynamoDB and Cloudfront with Route 53 (STUDENT_SOLUTION)
+# Project-503 : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, DynamoDB and Cloudfront with Route 53 (PROJECT_SOLUTION)
 
 ## Description
 
-The Clarusway Blog Page Application aims to deploy blog application as a web application written Django Framework on AWS Cloud Infrastructure. This infrastructure has Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) on defined VPC. Also, The Cloudfront and Route 53 services are located in front of the architecture and manage the traffic in secure. User is able to upload pictures and videos on own blog page and these are kept on S3 Bucket. This architecture will be created by Firms DevOps Guy.
+The Blog Page Application aims to deploy blog application as a web application written Django Framework on AWS Cloud Infrastructure. This infrastructure has Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) on defined VPC. Also, The Cloudfront and Route 53 services are located in front of the architecture and manage the traffic in secure. User is able to upload pictures and videos on own blog page and these are kept on S3 Bucket. This architecture will be created by Firms DevOps Guy.
 
 ## Steps to Solution
   
@@ -167,10 +167,10 @@ save changes
 ```
 - Select `www.<YOUR DNS NAME>` bucket ---> select Upload and upload `index.html` and `sorry.jpg` files from given folder---> Permissions ---> Access control list (ACL) ---> Choose from predefined ACLs ---> Grant public-read access  ( This allows Read for object)
 
-## Step 5: Copy files downloaded or cloned from `Clarusway_project` repo on Github 
+## Step 5: Copy files downloaded or cloned from `Kaya-Y` repo on Github 
 
 ## Step 6: Prepair your Github repository
-- Create private project repository on your Github and clone it on your local. Copy all files and folders which are downloaded from clarusway repo under this folder. Commit and push them on your private Githup Repo.
+- Create private project repository on your Github and clone it on your local. Copy all files and folders which are downloaded from Kaya-Y repo under this folder. Commit and push them on your private Githup Repo.
 
 ## Step 7: Prepare a userdata to be utilized in Launch Template
 Please 
@@ -193,7 +193,7 @@ python3 manage.py migrate
 python3 manage.py runserver 0.0.0.0:80
 ```
 
-## Step 8: Write RDS database endpoint and S3 Bucket name in settings file given by Clarusway Fullstack Developer team and push your application into your own public repo on Github
+## Step 8: Write RDS database endpoint and S3 Bucket name in settings file given by Fullstack Developer team and push your application into your own public repo on Github
 Please follow and apply the instructions in the developer_notes.txt.
 ```text
 - Movie and picture files are kept on S3 bucket named aws_capstone_S3_<name>_Blog as object. You should create an S3 bucket and write name of it on "/src/cblog/settings.py" file as AWS_STORAGE_BUCKET_NAME variable. In addition, you must assign region of S3 as AWS_S3_REGION_NAME variable
@@ -204,7 +204,7 @@ Please follow and apply the instructions in the developer_notes.txt.
     c. Port - "PORT"
     d. PASSWORD variable must be written on "/src/.env" file not to be exposed with settings file
 ```
-- Please check if this userdata is working or not. to do this create new instance in public subnet and show to students that it is working
+- Please check if this userdata is working or not. to do this create new instance in public subnet and show that it is working
 
 ## Step 9: Create NAT Instance in Public Subnet
 To launch NAT instance, go to the EC2 console and click the create button.
