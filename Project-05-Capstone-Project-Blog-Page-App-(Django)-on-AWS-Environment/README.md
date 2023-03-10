@@ -181,7 +181,7 @@ blog_page_project (folder)
 
 ## Expected Outcome
 
-![Phonebook App Search Page](./outcome.png)
+![Phonebook App Search Page](./capstone-5.jpg)
 
 ### At the end of the project, following topics are to be covered;
 
