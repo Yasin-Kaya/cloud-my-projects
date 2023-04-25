@@ -302,3 +302,8 @@ blog_page_project (folder)
 - [Python Django Example](https://realpython.com/get-started-with-django-1/)
 
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
+
+## Contact
+
+- Please contact me to access the project files.
+    * yasinkaya.devops@gmail.com
