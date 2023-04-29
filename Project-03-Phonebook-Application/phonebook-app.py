@@ -17,7 +17,7 @@ app.config['MYSQL_DATABASE_DB'] = 'yasin_phonebook'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 db_endpoint.close()
 mysql = MySQL()
-mysql.init_app(app) 
+mysql.init_app(app)
 connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()

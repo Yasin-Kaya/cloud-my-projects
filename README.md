@@ -14,6 +14,9 @@ List of projects within AWS workshop as follows;
 
 - [Project-05 : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, Lambda, DynamoDB and Cloudfront with Route 53](./Project-05-Capstone-Project-Blog-Page-App-(Django)-on-AWS-Environment/README.md)
 
+- [Project-06 : Image Add Application With Description (PHP) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, Elastic File System(EFS) and Cloudfront with Route 53](./Project-06-Capstone-Project-02-Images-Application/README.md)
+
+
 ## Python Hands-on Trainings
 
 List of hands-on trainings within Python workshop as follows;
